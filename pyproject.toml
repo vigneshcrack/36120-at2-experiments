@@ -1,0 +1,38 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "at2_weather"
+version = "0.0.1"
+description = "AT2 - Machine Learning as a Service - Weather Intelligence Experimentation"
+authors = [
+  { name = "Vignesh Selvam" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "ruff",
+]
+requires-python = "~=3.12.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["at2_weather"]
+include = ["pyproject.toml", "at2_weather/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["at2_weather"]
+force-sort-within-sections = true
+
