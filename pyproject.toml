@@ -16,10 +16,16 @@ classifiers = [
     
 ]
 dependencies = [
+    "jupyterlab==4.6.1",
+    "matplotlib>=3.11.1",
+    "mykrml-25740287>=0.2.0",
+    "pandas==2.2.3",
     "pip",
     "pytest",
     "python-dotenv",
     "ruff",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
 ]
 requires-python = "~=3.12.0"
 
